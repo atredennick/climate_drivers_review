@@ -1,0 +1,104 @@
+%---------------------------------------------
+% This document is for pdflatex
+%---------------------------------------------
+\documentclass[11pt]{article}
+
+\usepackage{amsmath,amsfonts,amssymb,graphicx,natbib,setspace,authblk}
+\usepackage[running]{lineno}
+\usepackage[vmargin=1in,hmargin=1in]{geometry}
+\usepackage{rotating}
+
+\usepackage[compact]{titlesec}
+
+\usepackage{graphicx}
+
+\usepackage{times}
+
+\usepackage{setspace}
+
+\usepackage{enumitem}
+\setlist{topsep=.125em,itemsep=-0.15em,leftmargin=0.75cm}
+
+\usepackage[textsize=footnotesize,textwidth=2.1cm]{todonotes}
+\newcommand{\smalltodo}[2][]
+    {\todo[caption={#2}, #1]
+    {\begin{spacing}{0.5}#2\end{spacing}}}
+% There is nothing \smalltodo{here is a comment} here.
+% \todo[inline]{Here is a comment}
+
+\renewcommand{\floatpagefraction}{0.98}
+\renewcommand{\topfraction}{0.99}
+\renewcommand{\textfraction}{0.05}
+
+\clubpenalty = 10000
+\widowpenalty = 10000
+
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\ba}{\begin{equation} \begin{aligned}}
+\newcommand{\ea}{\end{aligned} \end{equation}}
+
+\def\X{\mathbf{X}}
+\def\A{\mathbf{A}}
+\def\B{\mathbf{B}}
+\def\C{\mathbf{C}}
+\def\D{\mathbf{D}}
+\def\G{\mathbf{G}}
+\def\H{\mathbf{H}}
+\def\N{\mathbf{N}}
+\def\M{\mathbf{M}}
+\def\W{\mathbf{\Omega}}
+\def\P{\mathbf{P}}
+\def\V{\mathbf{V}}
+
+\title{Detecting and predicting the relationship between climate and population dynamics}
+
+\author[a]{Andrew T. Tredennick\thanks{Corresponding author: atredenn@gmail.com}}
+\author[a]{Peter B. Adler}
+\author[c]{Giles Hooker}
+\author[b]{Stephen P. Ellner}
+\author[a]{Brittany J. Teller}
+\affil[a]{Department of Wildland Resources and the Ecology Center, Utah State University, Logan Utah}
+\affil[b]{Department of Ecology and Evolutionary Biology, Cornell University, Ithaca, New York}
+\affil[c]{Department of Biological Statistics and Computational Biology, Cornell University, Ithaca, New York}
+\renewcommand\Authands{ and }
+
+\date{Last compile: \today}
+
+\renewcommand{\baselinestretch}{1.2}
+\linespread{1.5}
+
+\begin{document}
+
+\maketitle
+
+\vspace{1in} 
+
+\large
+{\emph{Running head}: Predicting climate effects}
+\normalsize 
+
+\newpage
+
+\renewcommand\linenumberfont{\normalfont\tiny\sffamily\color{gray}}
+\linenumbers
+
+\section*{Abstract}
+Populations fluctuate in response to internal and external forces.
+Quantifying the influence of external forces on population dynamics is a classic focus of population ecology, and it has taken on new relevance as we face the challenge of predicting species' responses to climate change.
+However, detecting climate-population growth relationships is difficult and, once detected, the relationship may not improve out of sample prediction -- the gold standard of forecasting.
+Here, we review empirical studies to assess how often including climate, or climate-related, covariates improves out of sample prediction of population abundances and dynamics.
+We find that...
+Drawing on examples from our literature review and our own work (failures?), we outline ways to determine in advance whether one can predict out of sample.
+We then use a simulation approach to show how to identify the most efficient ways to improve predictive skill and, in turn, allocate research effort. 
+ 
+
+\subsection*{Keywords:} Prediction, climate, forecast, population, validation  
+
+\newpage
+
+\section*{Introduction}
+Testing more stuff....
+
+
+\end{document}
